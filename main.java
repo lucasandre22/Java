@@ -1,4 +1,5 @@
-import java.util.Scanner;
+import java.util.*;
+import AbstractClass.*;
 
 public class main {
 	public static void main(String[] args)
@@ -9,7 +10,7 @@ public class main {
 		System.out.println("Printando l = " + l);
 		System.out.println("Digite uma string: ");
 		String string = new String();
-		string = sc.next();
+		string = sc.next(); // SCAN DE STRING
 		System.out.println("String: " + string);
 		ClasseTeste1 teste = new ClasseTeste1(4);
 		System.out.println(teste.getI());
@@ -28,6 +29,14 @@ public class main {
 		*/
 		//Thread a = new Thread();
 		
+		/*Vector<Integer> v = new Vector<Integer>(); //vector igual c++
+		v.add(4);
+		v.add(5);
+
+		Iterator<Integer> iterator = v.iterator();
+		while(iterator.hasNext())
+			System.out.println(iterator.next());
+		
 		Pessoa pessoa1 = new Pessoa(); //sempre por referência
 		System.out.println(pessoa1.validaCpf(52998224725L));
 		Estudante e = new Estudante("Lucas",22,8,2000);
@@ -38,7 +47,15 @@ public class main {
 		FabricaCarros n = FabricaCarros.getInstance();
 		System.out.println("Quantidade carros: " + FabricaCarros.getQuantidadeCarros());
 		FabricaCarros.produzirCarro();
-		System.out.println("Quantidade carros: " + FabricaCarros.getQuantidadeCarros());
+		System.out.println("Quantidade carros: " + FabricaCarros.getQuantidadeCarros());*/
+		
+		Apartamento ap = new Apartamento("Rua gonçalves", 45, "Curitiba", "Paraná");
+		ap.setAndar(4);
+		ap.setCondominio("Guartela");
+		ap.setCep(83404430);
+		ap.setSindico("Seu zé");
+		System.out.println(ap.getTipoMoradia());
+		System.out.println(ap.getDadosEndereco());
 	}
 }
 

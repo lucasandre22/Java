@@ -1,4 +1,4 @@
-
+package teste;
 public class ClasseTeste1 {
 	private int i;
 	static int j = 0;
@@ -10,16 +10,13 @@ public class ClasseTeste1 {
 	public void setI(int i) {
 		this.i = i;
 	}
-	
-	ClasseTeste1(int i)
-	{
+
+	ClasseTeste1(int i) {
 		this.i = i;
 	}
-	
-	ClasseTeste1()
-	{
+
+	ClasseTeste1() {
 		this.i = 0;
 	}
-	
-	
+
 }
