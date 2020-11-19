@@ -1,5 +1,6 @@
 import java.util.*;
 import AbstractClass.*;
+import JavaTemplates.*;
 
 public class main {
 	public static void main(String[] args)
@@ -56,6 +57,33 @@ public class main {
 		ap.setSindico("Seu zé");
 		System.out.println(ap.getTipoMoradia());
 		System.out.println(ap.getDadosEndereco());
+
+		Vetor vetor = new Vetor();
+		vetor.add(1);
+		vetor.add(2);
+		vetor.add(3);
+		vetor.add(4);
+		vetor.add(5);
+		vetor.add(6);
+		vetor.add(7);
+		vetor.add(8);
+		vetor.initializeIterator();
+		while(vetor.iteratorHasNext()) {
+			System.out.println(vetor.getIterator().next());
+		}
+		
+		
+		//testar minha lista template
+		MyListTemplate<Integer> lista = new MyListTemplate<Integer>();
+		lista.add(4);
+		lista.add(5);
+		lista.add(6);
+		lista.add(7);
+		lista.add(8);
+		lista.add(9);
+		lista.add(10);
+		lista.print();
+		
 	}
 }
 

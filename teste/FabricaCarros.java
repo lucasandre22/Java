@@ -1,3 +1,4 @@
+package teste;
 
 // padrao singleton
 public class FabricaCarros {
@@ -5,7 +6,7 @@ public class FabricaCarros {
 	private static int quantidadeCarros;
 	private static FabricaCarros instance;
 
-	FabricaCarros() {
+	private FabricaCarros() { //para previnir instancia desse objeto fora da classe, já que é singleton
 		id = 0;
 		quantidadeCarros = 0;
 	}

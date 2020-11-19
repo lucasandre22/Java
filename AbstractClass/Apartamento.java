@@ -7,6 +7,7 @@ public class Apartamento extends Moradia{
 	
 	
 	Apartamento() {
+		//super();
 		condominio = "";
 		andar = 0;
 		sindico = "";
@@ -16,6 +17,7 @@ public class Apartamento extends Moradia{
 		super(rua, numero, cidade, estado);
 	}
 	
+	@Override
 	public String getDadosEndereco() {
 		String dados = super.getDadosEndereco();
 		dados += "Condominio " + condominio + ' ' + "Andar " + andar;

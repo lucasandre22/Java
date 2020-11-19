@@ -1,5 +1,4 @@
 package AbstractClass;
-import java.util.*;
 
 abstract class Moradia {
 	protected String rua;
@@ -25,11 +24,13 @@ abstract class Moradia {
 		this.estado = estado;
 	}
 	
+	//deixo esse método public ou private??
 	public String getDadosEndereco() {
 		String dados = rua + ' ' + numero + ' ' + cidade + ' ' + estado + ' ' + cep + '\n';
 		return dados;
 	}
 	
+	//abstract é o mesmo que função virtual pura em c++
 	abstract public String getTipoMoradia();
 	
 	public String getRua() { return rua; }
