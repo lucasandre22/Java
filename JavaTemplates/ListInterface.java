@@ -1,6 +1,6 @@
 package JavaTemplates;
 
-public interface ListInferface<T> {
+public interface ListInterface<T> {
 	public void add(T i);
 	public void remove(T i);
 	public void removeAll();

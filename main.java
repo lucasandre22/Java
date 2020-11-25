@@ -84,7 +84,10 @@ public class main {
 		lista.add(10);
 		lista.print();
 		
+		InputStream stream = new FileImputStream("file.txt");
+		
 	}
+
 }
 
 //double i = 2.04;
