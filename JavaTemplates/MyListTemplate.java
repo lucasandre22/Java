@@ -7,12 +7,6 @@ public class MyListTemplate<T> implements ListInterface<T> {
 		Node<T> next;
 		Node<T> prev;
 
-		Node() {
-			data = null;
-			next = null;
-			prev = null;
-		}
-
 		Node(T data) {
 			this.data = data;
 			next = null;
